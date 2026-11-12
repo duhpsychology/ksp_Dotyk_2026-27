@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Курс супраментальної психології: Душа людини та дотик до багатовимірності</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sp: {
+              cream: '#F5F0EB',
+              sand: '#EAE3D9',
+              dark: '#140E0B',
+              charcoal: '#1F1916',
+              body: '#332F2C',
+              muted: '#6B635B',
+              gold: '#C8963E',
+              copper: '#A3704C',
+              bronze: '#B8860B',
+              border: '#E5E0DA',
+            }
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F5F0EB;
+      color: #332F2C;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+
+    .sp-card {
+      background: #FFFFFF;
+      border: 1px solid #E5E0DA;
+      box-shadow: 0 4px 20px rgba(31, 25, 22, 0.04);
+      border-radius: 1.25rem;
+    }
+
+    .sp-card-hover {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .sp-card-hover:hover {
+      transform: translateY(-3px);
+      border-color: #C8963E;
+      box-shadow: 0 12px 30px rgba(31, 25, 22, 0.08);
+    }
+
+    .badge-sp {
+      display: inline-block;
+      padding: 0.35rem 1rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(200, 150, 62, 0.4);
+      background-color: rgba(200, 150, 62, 0.1);
+      color: #A3704C;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .badge-sp-dark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1.1rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(200, 150, 62, 0.45);
+      background-color: rgba(200, 150, 62, 0.12);
+      color: #E8C288;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .hero-glow-bg {
+      background-color: #140E0B;
+      background-image: radial-gradient(circle at 50% 38%, rgba(200, 150, 62, 0.28) 0%, rgba(20, 14, 11, 0.98) 72%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .anim-hero-layer {
+      position: absolute;
+      inset: -5%;
+      width: 110%;
+      height: 110%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.18;
+      filter: saturate(1.1) brightness(0.85);
+      animation: cosmicFloat 30s ease-in-out infinite;
+    }
+
+    @keyframes cosmicFloat {
+      0%, 100% { transform: scale(1) translate3d(0, 0, 0); }
+      50% { transform: scale(1.05) translate3d(-1%, -1%, 0); }
+    }
+  </style>
+</head>
+<body class="selection:bg-sp-gold/20 selection:text-sp-charcoal">
+
+  <!-- STICKY HEADER -->
+  <header class="sticky top-0 z-50 bg-[#140E0B]/95 backdrop-blur-md border-b border-[#E5E0DA]/15 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#hero" class="flex items-center group">
+        <div class="font-serif font-bold text-base sm:text-lg tracking-wider text-white group-hover:text-sp-gold transition-colors">
+          ЦЕНТР СУПРАМЕНТАЛЬНОЇ ПСИХОЛОГІЇ
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden xl:flex items-center gap-6 text-[11px] font-sans font-medium uppercase tracking-wider text-[#D9D1C7]">
+        <a href="#concept" class="hover:text-sp-gold transition-colors">Концепція</a>
+        <a href="#audience" class="hover:text-sp-gold transition-colors">Для кого</a>
+        <a href="#transformations" class="hover:text-sp-gold transition-colors">Результати</a>
+        <a href="#methodology" class="hover:text-sp-gold transition-colors">Методологія</a>
+        <a href="#program" class="hover:text-sp-gold transition-colors">Програма</a>
+        <a href="#toolkit" class="hover:text-sp-gold transition-colors">Інструментарій</a>
+        <a href="#author" class="hover:text-sp-gold transition-colors">Авторка</a>
+        <a href="#faq" class="hover:text-sp-gold transition-colors">FAQ</a>
+        <a href="#trust" class="hover:text-sp-gold transition-colors">Довіра</a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#join" class="px-6 py-2.5 rounded-full font-sans text-xs font-bold uppercase tracking-wider bg-sp-gold hover:bg-sp-bronze text-slate-950 transition-all duration-300 hover:scale-105 shadow-md shadow-sp-gold/20">
+          Долучитися до курсу
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" aria-label="Меню" class="xl:hidden p-2 rounded-xl text-slate-300 hover:text-white hover:bg-white/5 transition-colors">
+        <svg id="menuIconOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="menuIconClose" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobileNav" class="xl:hidden hidden bg-[#140E0B]/98 border-b border-white/10 px-6 py-6 space-y-4">
+      <a href="#concept" class="mobile-nav-link block text-sm font-medium text-slate-300 hover:text-sp-gold">Філософія та концепція</a>
+      <a href="#audience" class="mobile-nav-link block text-sm font-medium text-slate-300 hover:text-sp-gold">Для кого цей курс</a>
+      <a href="#transformations" class="mobile-nav-link block text-sm font-medium text-slate-300 hover:text-sp-gold">Ключові трансформації</a>
+      <a href="#methodology" class="mobile-nav-link block text-sm font-medium text-slate-300 hover:text-sp-gold">Методологічні особливості</a>
+      <a href="#program" class="mobile-nav-link block text-sm font-medium text-slate-300 hover:text-sp-gold">Програма курсу</a>
+      <a href="#toolkit" class="mobile-nav-link block text-sm font-medium text-slate-300 hover:text-sp-gold">Практичний інструментарій</a>
+      <a href="#author" class="mobile-nav-link block text-sm font-medium text-slate-300 hover:text-sp-gold">Про авторку курсу</a>
+      <a href="#faq" class="mobile-nav-link block text-sm font-medium text-slate-300 hover:text-sp-gold">Поширені запитання</a>
+      <a href="#trust" class="mobile-nav-link block text-sm font-medium text-slate-300 hover:text-sp-gold">Довіра та формат</a>
+      <div class="pt-2">
+        <a href="#join" class="mobile-nav-link block w-full py-3 text-center rounded-xl font-sans text-xs font-bold uppercase tracking-wider bg-sp-gold text-slate-950">
+          Долучитися до курсу
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. ГОЛОВНИЙ ЕКРАН (HERO SECTION) -->
+  <section id="hero" class="hero-glow-bg pt-16 pb-24 md:pt-24 md:pb-32 border-b border-[#E5E0DA]/10">
+    <div class="anim-hero-layer" style="background-image: url('https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1600&q=80');"></div>
+    
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="space-y-6">
+        <div class="badge-sp-dark mx-auto">
+          <span class="w-2 h-2 rounded-full bg-sp-gold"></span>
+          Курс супраментальної психології
+        </div>
+
+        <div class="font-sans text-xs sm:text-sm uppercase tracking-[0.18em] text-[#E8C288] font-semibold">
+          Душа людини та дотик до багатовимірності
+        </div>
+
+        <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.14]">
+          Перехід від напруги й ментального контролю до життя з позиції <span class="italic text-[#E8C288]">Вищого Я</span>
+        </h1>
+
+        <p class="font-sans text-base sm:text-lg text-[#EAE3D9] max-w-3xl font-light leading-relaxed mx-auto">
+          Активація Тіла Світла та набуття внутрішнього стрижня в реальному житті. Практична система пізнання тонких планів, де внутрішній стан стає джерелом захисту, відновлення життєвої сили та формування гармонійного подієвого поля навколо вас і ваших близьких.
+        </p>
+
+        <!-- Format Pill -->
+        <div class="inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 px-5 py-2.5 rounded-xl bg-white/5 border border-white/15 text-xs sm:text-sm text-[#EAE3D9] font-light">
+          <span><span class="text-sp-gold font-bold">✦</span> Очні практичні заняття</span>
+          <span><span class="text-sp-gold font-bold">✦</span> Онлайн-формат із практиками синхронного проживання</span>
+          <span><span class="text-sp-gold font-bold">✦</span> Відеозаписи занять і практик</span>
+        </div>
+
+        <!-- Hero Action Buttons -->
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#join" class="w-full sm:w-auto px-8 py-4 rounded-full font-sans text-xs font-bold uppercase tracking-wider bg-sp-gold hover:bg-sp-bronze text-slate-950 transition-all duration-300 hover:scale-105 shadow-xl shadow-sp-gold/20 text-center">
+            Долучитися до курсу
+          </a>
+          <a href="#concept" class="w-full sm:w-auto px-8 py-4 rounded-full font-sans text-xs font-bold uppercase tracking-wider border border-white/25 hover:border-white text-white hover:bg-white/5 transition-all text-center">
+            Пробудити світло душі
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ФІЛОСОФІЯ ТА ФУНДАМЕНТАЛЬНА КОНЦЕПЦІЯ (BIG IDEA) -->
+  <section id="concept" class="py-24 bg-sp-cream border-b border-sp-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="badge-sp mb-3">
+          Філософія та фундаментальна концепція
+        </div>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-sp-charcoal leading-tight">
+          Основи супраментальної <span class="italic text-sp-copper">свідомості</span>
+        </h2>
+        <p class="text-sp-body text-base mt-4 leading-relaxed font-light">
+          Цілісна система розуміння людини як багатовимірної світлової істоти, що діє одночасно на Землі та на Тонкому Плані.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
+        
+        <!-- Item 1 -->
+        <div class="sp-card p-8 sp-card-hover lg:col-span-2">
+          <div class="text-xs font-sans font-bold text-sp-copper uppercase tracking-widest mb-2">01 • Супраментал</div>
+          <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-3">Що таке супраментальна свідомість</h3>
+          <p class="text-sm text-sp-body leading-relaxed">
+            «Супра» означає рівні, розташовані над світом людських думок і менталу. Це усвідомлена людиною первинна світлова енергія всесвіту, з якої виткана душа, та вміння проявляти її в щоденній матеріальній реальності.
+          </p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="sp-card p-8 sp-card-hover lg:col-span-2">
+          <div class="text-xs font-sans font-bold text-sp-copper uppercase tracking-widest mb-2">02 • Два виміри</div>
+          <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-3">Багатовимірність людини</h3>
+          <p class="text-sm text-sp-body leading-relaxed">
+            Людина живе одночасно у двох взаємопов'язаних вимірах - фізичному (матеріальному) та тонкому (духовному). Матеріальний світ тривимірний, обмежений п'ятьма органами чуття та дуальністю (плюс і мінус, гойдалки настрою), тоді як тонка природа людини має доступ до ширших вимірів.
+          </p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="sp-card p-8 sp-card-hover lg:col-span-2">
+          <div class="text-xs font-sans font-bold text-sp-copper uppercase tracking-widest mb-2">03 • Дзеркало долі</div>
+          <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-3">Закон первинності тонкого світу</h3>
+          <p class="text-sm text-sp-body leading-relaxed">
+            Те, що накопичено всередині, у момент готовності проявляється у зовнішньому подієвому просторі. Зовнішній світ - дзеркало внутрішнього налаштування душі.
+          </p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="sp-card p-8 sp-card-hover lg:col-span-3 border-sp-gold/40 bg-gradient-to-br from-white to-[#FAF6F0]">
+          <div class="text-xs font-sans font-bold text-sp-copper uppercase tracking-widest mb-2">04 • Духовна субстанція</div>
+          <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-3">Тіло Світла (Вище Я)</h3>
+          <p class="text-sm sm:text-base text-sp-body leading-relaxed">
+            Окрім фізичного тіла та особистості (его), у кожної людини є духовна субстанція - Тіло Світла. Воно живе поза обмеженнями земного часу, пам'ятає досвід усіх втілень, зберігає зв'язок із джерелом життя та перебуває у стані незмінного спокою, мудрості й краси.
+          </p>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="sp-card p-8 sp-card-hover lg:col-span-3 border-sp-gold/40 bg-gradient-to-br from-white to-[#FAF6F0]">
+          <div class="text-xs font-sans font-bold text-sp-copper uppercase tracking-widest mb-2">05 • Практична технологія</div>
+          <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-3">Психофізика</h3>
+          <p class="text-sm sm:text-base text-sp-body leading-relaxed">
+            Мистецтво усвідомленого налаштування тонких тіл за обраними критеріями, укріплене в часі, коли внутрішній стан формує фізичну реальність і захищає долю.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ДЛЯ КОГО ЦЕЙ КУРС (ЦІЛЬОВА АУДИТОРІЯ) -->
+  <section id="audience" class="py-24 bg-white border-b border-sp-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="badge-sp mb-3">
+          Для кого цей курс
+        </div>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-sp-charcoal leading-tight">
+          Кому відгукнеться <span class="italic text-sp-copper">навчання</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <div class="sp-card p-8 sp-card-hover flex gap-5 items-start">
+          <div class="w-12 h-12 rounded-2xl bg-sp-cream border border-sp-border flex items-center justify-center text-sp-gold font-serif font-bold text-xl shrink-0">
+            01
+          </div>
+          <div>
+            <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-2">
+              Для тих, хто втомився від емоційного виснаження та тривоги
+            </h3>
+            <p class="text-sm sm:text-base text-sp-body leading-relaxed">
+              Хто живе у стані «гойдалок» (від радості до спустошення), постійного внутрішнього діалогу чи фонового напруження через виклики сьогодення.
+            </p>
+          </div>
+        </div>
+
+        <div class="sp-card p-8 sp-card-hover flex gap-5 items-start">
+          <div class="w-12 h-12 rounded-2xl bg-sp-cream border border-sp-border flex items-center justify-center text-sp-gold font-serif font-bold text-xl shrink-0">
+            02
+          </div>
+          <div>
+            <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-2">
+              Для практиків і допоміжних професій
+            </h3>
+            <p class="text-xs font-sans font-semibold uppercase tracking-wider text-sp-copper mb-2">Психологи, цілителі, тарологи, астрологи</p>
+            <p class="text-sm sm:text-base text-sp-body leading-relaxed">
+              Хто хоче допомагати іншим людям, не вичерпуючи власні життєві сили, працюючи через чисті вищі потоки, а не через власне его чи перетягування чужого болю.
+            </p>
+          </div>
+        </div>
+
+        <div class="sp-card p-8 sp-card-hover flex gap-5 items-start">
+          <div class="w-12 h-12 rounded-2xl bg-sp-cream border border-sp-border flex items-center justify-center text-sp-gold font-serif font-bold text-xl shrink-0">
+            03
+          </div>
+          <div>
+            <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-2">
+              Для шукачів духовного стрижня та покликання
+            </h3>
+            <p class="text-sm sm:text-base text-sp-body leading-relaxed">
+              Хто відчуває, що є чимось значно більшим за соціальні ролі, роботу та повсякденну рутину, й шукає прямий контакт із власною душею.
+            </p>
+          </div>
+        </div>
+
+        <div class="sp-card p-8 sp-card-hover flex gap-5 items-start">
+          <div class="w-12 h-12 rounded-2xl bg-sp-cream border border-sp-border flex items-center justify-center text-sp-gold font-serif font-bold text-xl shrink-0">
+            04
+          </div>
+          <div>
+            <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-2">
+              Для батьків та тих, хто дбає про рідних
+            </h3>
+            <p class="text-sm sm:text-base text-sp-body leading-relaxed">
+              Хто прагне створювати захисне світлове поле для сім'ї, допомагати дітям знайти себе та гармонізувати сімейний простір.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. КЛЮЧОВІ ТРАНСФОРМАЦІЇ ТА РЕЗУЛЬТАТИ НАВЧАННЯ -->
+  <section id="transformations" class="py-24 bg-sp-cream border-b border-sp-border">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="badge-sp mb-3">
+          Ключові трансформації
+        </div>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-sp-charcoal leading-tight">
+          Результати навчання: <span class="italic text-sp-copper">до та після курсу</span>
+        </h2>
+      </div>
+
+      <div class="sp-card overflow-hidden shadow-md">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="border-b border-sp-border bg-[#F8F5F1]">
+                <th class="p-5 sm:p-6 text-xs font-sans font-bold text-rose-800 uppercase tracking-wider w-1/2 bg-rose-50/60">
+                  До курсу (Рівень Его та нижчих тіл)
+                </th>
+                <th class="p-5 sm:p-6 text-xs font-sans font-bold text-amber-900 uppercase tracking-wider w-1/2 bg-amber-50/70">
+                  Після курсу (Рівень Тіла Світла та Вищого Я)
+                </th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-sp-border text-sm sm:text-base">
+              <tr class="hover:bg-sp-cream/40 transition-colors">
+                <td class="p-5 sm:p-6 text-sp-body bg-rose-50/20 align-top">
+                  <strong class="block text-rose-900 font-serif text-lg mb-1">Постійний внутрішній діалог:</strong>
+                  пошук відповідей суто раціональним контролем.
+                </td>
+                <td class="p-5 sm:p-6 text-sp-charcoal bg-amber-50/20 align-top">
+                  <strong class="block text-sp-copper font-serif text-lg mb-1">Внутрішня тиша:</strong>
+                  отримання прямих інсайтів та відповідей від простору через серце.
+                </td>
+              </tr>
+              <tr class="hover:bg-sp-cream/40 transition-colors">
+                <td class="p-5 sm:p-6 text-sp-body bg-rose-50/20 align-top">
+                  <strong class="block text-rose-900 font-serif text-lg mb-1">Емоційні гойдалки:</strong>
+                  застрягання в образах, тривозі та безсиллі.
+                </td>
+                <td class="p-5 sm:p-6 text-sp-charcoal bg-amber-50/20 align-top">
+                  <strong class="block text-sp-copper font-serif text-lg mb-1">Цілісність і стійкість:</strong>
+                  здатність швидко виходити з тіней і відновлювати ресурсний стан.
+                </td>
+              </tr>
+              <tr class="hover:bg-sp-cream/40 transition-colors">
+                <td class="p-5 sm:p-6 text-sp-body bg-rose-50/20 align-top">
+                  <strong class="block text-rose-900 font-serif text-lg mb-1">Життя з позиції матеріального дефіциту:</strong>
+                  відчуття відокремленості та захисної боротьби.
+                </td>
+                <td class="p-5 sm:p-6 text-sp-charcoal bg-amber-50/20 align-top">
+                  <strong class="block text-sp-copper font-serif text-lg mb-1">Життя з позиції співтворення:</strong>
+                  відчуття себе провідником світлової енергії, зв'язок зі світом.
+                </td>
+              </tr>
+              <tr class="hover:bg-sp-cream/40 transition-colors">
+                <td class="p-5 sm:p-6 text-sp-body bg-rose-50/20 align-top">
+                  <strong class="block text-rose-900 font-serif text-lg mb-1">Уявні конструкції:</strong>
+                  фантазії, що не впливають на події.
+                </td>
+                <td class="p-5 sm:p-6 text-sp-charcoal bg-amber-50/20 align-top">
+                  <strong class="block text-sp-copper font-serif text-lg mb-1">Живі простори:</strong>
+                  реальні трансформаційні поля, які зцілюють тіло та змінюють обставини.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. МЕТОДОЛОГІЧНІ ОСОБЛИВОСТІ КУРСУ -->
+  <section id="methodology" class="py-24 bg-white border-b border-sp-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="badge-sp mb-3">
+          Методологічні особливості курсу
+        </div>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-sp-charcoal leading-tight">
+          Чому цей підхід працює <span class="italic text-sp-copper">в реальному житті</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="sp-card p-7 sp-card-hover">
+          <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-sp-gold mb-5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-sp-charcoal mb-2">Відчуття замість абстрактної теорії</h3>
+          <p class="text-sm text-sp-body leading-relaxed">
+            Курс побудований на передачі станів через живе чуття, а не сухий ментальний аналіз.
+          </p>
+        </div>
+
+        <div class="sp-card p-7 sp-card-hover">
+          <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-sp-gold mb-5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-sp-charcoal mb-2">Живі простори замість класичної пасивної медитації</h3>
+          <p class="text-sm text-sp-body leading-relaxed">
+            Уміння одночасно перебувати у тонкому цілісному просторі та діяти у фізичному світі - під час роботи, спілкування та повсякденних справ.
+          </p>
+        </div>
+
+        <div class="sp-card p-7 sp-card-hover">
+          <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-sp-gold mb-5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-sp-charcoal mb-2">Екологія внутрішнього простору</h3>
+          <p class="text-sm text-sp-body leading-relaxed">
+            Робота з розпізнаванням та розчиненням «тіней» - заблокованих емоцій, претензій, дитячих образ та історичних кармічних заборон.
+          </p>
+        </div>
+
+        <div class="sp-card p-7 sp-card-hover">
+          <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-sp-gold mb-5">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-sp-charcoal mb-2">Тіло ніколи не бреше</h3>
+          <p class="text-sm text-sp-body leading-relaxed">
+            Використання тіла як головного камертона інтуїції та правди душі для діагностики життєвих процесів.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. ТЕМАТИЧНА ПРОГРАМА КУРСУ (МОДУЛІ ЛЕНДІНГУ) -->
+  <section id="program" class="py-24 bg-sp-cream border-b border-sp-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="badge-sp mb-3">
+          Тематична програма курсу
+        </div>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-sp-charcoal leading-tight">
+          5 модулів <span class="italic text-sp-copper">трансформації</span>
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- Модуль 1 -->
+        <div class="sp-card overflow-hidden">
+          <button class="module-header w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-sp-cream/40 transition-colors" data-target="m1">
+            <div class="flex items-center gap-4">
+              <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center font-serif font-bold text-sp-gold text-xl shrink-0">01</div>
+              <div>
+                <div class="text-xs font-sans font-bold text-sp-copper uppercase tracking-wider">Модуль 1</div>
+                <h3 class="font-serif text-xl sm:text-2xl font-bold text-sp-charcoal">Архітектура багатовимірності: світи, тіла та природа людини</h3>
+              </div>
+            </div>
+            <span class="accordion-icon text-sp-muted text-2xl font-light transition-transform">&minus;</span>
+          </button>
+          <div id="m1" class="module-content px-6 pb-6 pt-3 text-sm sm:text-base text-sp-body border-t border-sp-border bg-white">
+            <ul class="space-y-2.5">
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Структура людини: фізичне тіло, астрал (світ емоцій), ментал (світ думок), каузал (світ почуттів і цінностей), будхічне та атманічне тіла.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Два начала: нижче я (особистість, его-дитина, ментальний дубль) та Вище Я (вічна духовна індивідуальність).</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Чому матеріальний світ дуальний (плюс/мінус), і як вийти в точку рівноваги.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Модуль 2 -->
+        <div class="sp-card overflow-hidden">
+          <button class="module-header w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-sp-cream/40 transition-colors" data-target="m2">
+            <div class="flex items-center gap-4">
+              <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center font-serif font-bold text-sp-gold text-xl shrink-0">02</div>
+              <div>
+                <div class="text-xs font-sans font-bold text-sp-copper uppercase tracking-wider">Модуль 2</div>
+                <h3 class="font-serif text-xl sm:text-2xl font-bold text-sp-charcoal">Пробудження Тіла Світла та внутрішнє Сонце</h3>
+              </div>
+            </div>
+            <span class="accordion-icon text-sp-muted text-2xl font-light transition-transform">&plus;</span>
+          </button>
+          <div id="m2" class="module-content hidden px-6 pb-6 pt-3 text-sm sm:text-base text-sp-body border-t border-sp-border bg-white">
+            <ul class="space-y-2.5">
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Природа первинного світла (супраменталу).</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Точка душі та активація внутрішнього Сонця в серцевому центрі.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Як Тіло Світла проявляється в рисах характеру: спокій, ясність, мудрість, гідність, оптимізм.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Очищення джерел світла: виявлення та трансформація тіней і внутрішніх блоків.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Модуль 3 -->
+        <div class="sp-card overflow-hidden">
+          <button class="module-header w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-sp-cream/40 transition-colors" data-target="m3">
+            <div class="flex items-center gap-4">
+              <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center font-serif font-bold text-sp-gold text-xl shrink-0">03</div>
+              <div>
+                <div class="text-xs font-sans font-bold text-sp-copper uppercase tracking-wider">Модуль 3</div>
+                <h3 class="font-serif text-xl sm:text-2xl font-bold text-sp-charcoal">Живі простори та мова тонкого світу</h3>
+              </div>
+            </div>
+            <span class="accordion-icon text-sp-muted text-2xl font-light transition-transform">&plus;</span>
+          </button>
+          <div id="m3" class="module-content hidden px-6 pb-6 pt-3 text-sm sm:text-base text-sp-body border-t border-sp-border bg-white">
+            <ul class="space-y-2.5">
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Чим живий простір відрізняється від фантазій та ілюзій уяви.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Стан «присутності без втручання», який переводить свідомість на вищий горизонт.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Входження в ресурсні простори природи (полонини, гори, ліс, вода) та взаємодія з тонкими структурами мінералів і рослин.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Сакральні знаки, символи (Зерно життя, Квітка життя) та мова серця.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Модуль 4 -->
+        <div class="sp-card overflow-hidden">
+          <button class="module-header w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-sp-cream/40 transition-colors" data-target="m4">
+            <div class="flex items-center gap-4">
+              <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center font-serif font-bold text-sp-gold text-xl shrink-0">04</div>
+              <div>
+                <div class="text-xs font-sans font-bold text-sp-copper uppercase tracking-wider">Модуль 4</div>
+                <h3 class="font-serif text-xl sm:text-2xl font-bold text-sp-charcoal">Психофізика та керування подієвим полем</h3>
+              </div>
+            </div>
+            <span class="accordion-icon text-sp-muted text-2xl font-light transition-transform">&plus;</span>
+          </button>
+          <div id="m4" class="module-content hidden px-6 pb-6 pt-3 text-sm sm:text-base text-sp-body border-t border-sp-border bg-white">
+            <ul class="space-y-2.5">
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Механізм психофізики: налаштування тонкого тіла за критеріями та закріплення дії в часі.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Перехід від сприйняття часу «як паровозик» до вертикального часу (усе в теперішньому моменті).</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Робота зі сценаріями майбутнього: налаштування на власну професійну майстерність і гармонійні життєві події.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Створення енергетичного та світлового захисту навколо себе й близьких.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Модуль 5 -->
+        <div class="sp-card overflow-hidden">
+          <button class="module-header w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-sp-cream/40 transition-colors" data-target="m5">
+            <div class="flex items-center gap-4">
+              <div class="w-11 h-11 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center font-serif font-bold text-sp-gold text-xl shrink-0">05</div>
+              <div>
+                <div class="text-xs font-sans font-bold text-sp-copper uppercase tracking-wider">Модуль 5</div>
+                <h3 class="font-serif text-xl sm:text-2xl font-bold text-sp-charcoal">Практикум зцілення та відновлення</h3>
+              </div>
+            </div>
+            <span class="accordion-icon text-sp-muted text-2xl font-light transition-transform">&plus;</span>
+          </button>
+          <div id="m5" class="module-content hidden px-6 pb-6 pt-3 text-sm sm:text-base text-sp-body border-t border-sp-border bg-white">
+            <ul class="space-y-2.5">
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Повернення до цілісності: трансформація болю в силу й життєвий досвід.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Техніка «Долина рік життя»: розпізнавання своїх намірів, знаходження потоків здоров'я, розвитку та покликання.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Глибинна робота на папірцях: розплутування кармічних причин, перепрошивка дитячих емоційних травм та зняття історичних заборон.</span></li>
+              <li class="flex items-start gap-2.5"><span class="text-sp-gold">✦</span> <span>Відновлення енергетичних центрів через потоки світла та спектр веселки.</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. ПРАКТИЧНИЙ ІНСТРУМЕНТАРІЙ ВИПУСКНИКА КУРСУ -->
+  <section id="toolkit" class="py-24 bg-white border-b border-sp-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="badge-sp mb-3">
+          Практичний інструментарій
+        </div>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-sp-charcoal leading-tight">
+          Навички, якими володіє <span class="italic text-sp-copper">випускник курсу</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <div class="sp-card p-8 sp-card-hover">
+          <div class="text-xs font-sans font-bold text-sp-copper uppercase tracking-widest mb-2">Інструмент 01</div>
+          <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-3">Діагностика через дотик до поля</h3>
+          <p class="text-sm sm:text-base text-sp-body leading-relaxed">
+            Уміння відчувати напругу, розпізнавати причини чужого й власного дискомфорту та спрямовувати туди світло.
+          </p>
+        </div>
+
+        <div class="sp-card p-8 sp-card-hover">
+          <div class="text-xs font-sans font-bold text-sp-copper uppercase tracking-widest mb-2">Інструмент 02</div>
+          <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-3">Техніка виходу зі складних емоцій («Крок»)</h3>
+          <p class="text-sm sm:text-base text-sp-body leading-relaxed">
+            Розтотожнення з образами ментального дубля й перехід у стан свідомості спостерігача.
+          </p>
+        </div>
+
+        <div class="sp-card p-8 sp-card-hover">
+          <div class="text-xs font-sans font-bold text-sp-copper uppercase tracking-widest mb-2">Інструмент 03</div>
+          <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-3">Трансформація образів</h3>
+          <p class="text-sm sm:text-base text-sp-body leading-relaxed">
+            Миттєвий перевід негативного внутрішнього образу (важкість, камінь) у гармонійні елементи живої природи.
+          </p>
+        </div>
+
+        <div class="sp-card p-8 sp-card-hover">
+          <div class="text-xs font-sans font-bold text-sp-copper uppercase tracking-widest mb-2">Інструмент 04</div>
+          <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-3">Світлова допомога на відстані</h3>
+          <p class="text-sm sm:text-base text-sp-body leading-relaxed">
+            Робота через звернення до вищого образу людини без порушення її волі.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7.5. ПРО АВТОРА КУРСУ: КАТЕРИНА СКЛЯР -->
+  <section id="author" class="py-24 bg-sp-cream border-b border-sp-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="badge-sp mb-3">
+          Про автора курсу
+        </div>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-sp-charcoal leading-tight">
+          Авторка та провідна наставниця <br/>
+          <span class="italic text-sp-copper">Катерина Скляр</span>
+        </h2>
+      </div>
+
+      <div class="sp-card p-6 sm:p-12 max-w-5xl mx-auto shadow-md">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Photo Column -->
+          <div class="lg:col-span-5 flex flex-col items-center">
+            <div class="p-3 bg-sp-cream rounded-2xl border border-sp-border shadow-sm max-w-sm w-full">
+              <img src="Катерина.jpg" onerror="this.onerror=null;this.src='https://placehold.co/500x620/F5F0EB/A3704C?text=Катерина+Скляр';" alt="Катерина Скляр - Засновниця Центру, провідний тренер Центру" class="w-full h-[420px] rounded-xl object-cover object-top" />
+            </div>
+
+            <div class="mt-6 text-center">
+              <h3 class="font-serif text-3xl font-bold text-sp-charcoal tracking-wide">
+                Катерина Скляр
+              </h3>
+              <p class="text-xs font-sans font-semibold text-sp-copper uppercase tracking-widest mt-1.5">
+                Засновниця Центру, провідний тренер Центру
+              </p>
+            </div>
+          </div>
+
+          <!-- Bio & Credentials Column -->
+          <div class="lg:col-span-7 flex flex-col justify-between space-y-5">
+            
+            <p class="text-sp-charcoal text-base sm:text-lg leading-relaxed font-light">
+              Скляр Катерина - професійний психолог, астролог, педагог, тренер особистісного та духовного зростання, автор унікальних програм розвитку людини та нових напрямків в психології: духовна та супраментальна психологія. Має медичну освіту та 15-річний досвід роботи в медицині.
+            </p>
+
+            <p class="text-sp-body text-sm sm:text-base leading-relaxed">
+              Створює систему духовного розвитку, де людина відкриває бачення свого тонкого устрою і світла в собі, яке впливає на якість розвитку і людини, і суспільства.
+            </p>
+
+            <!-- Highlight Quote Card -->
+            <div class="p-5 sm:p-6 rounded-xl bg-sp-cream border-l-4 border-sp-gold">
+              <p class="font-serif text-lg sm:text-xl text-sp-charcoal font-semibold leading-snug">
+                Має три вищі освіти та 35-річний досвід роботи з людьми.
+              </p>
+            </div>
+
+            <p class="text-sp-body text-sm sm:text-base leading-relaxed">
+              Заснувала в 2001 році жіночий центр «Сила жінки», в 2013 році «Центр духовної психології». В 2019 Центр розширився та змінив назву на «Центр супраментальної психології».
+            </p>
+
+            <p class="text-sp-body text-sm sm:text-base leading-relaxed">
+              Центр розвиває здібність чуття та бачення в людях, розкриває внутрішнє світло в людині та інші високі якості, які покращують долю людини та впливають на розвиток суспільства.
+            </p>
+
+            <!-- Stats Counters -->
+            <div class="pt-6 border-t border-sp-border grid grid-cols-2 gap-6 sm:gap-10">
+              <div class="border-l-2 border-sp-gold pl-4 sm:pl-5">
+                <div class="font-serif text-4xl sm:text-5xl font-bold text-sp-charcoal">30+</div>
+                <div class="text-xs font-sans font-semibold text-sp-copper uppercase tracking-widest mt-1">Років практики</div>
+              </div>
+              <div class="border-l-2 border-sp-gold pl-4 sm:pl-5">
+                <div class="font-serif text-4xl sm:text-5xl font-bold text-sp-charcoal">1000+</div>
+                <div class="text-xs font-sans font-semibold text-sp-copper uppercase tracking-widest mt-1">Учнів</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. ВІДПОВІДІ НА ПОШИРЕНІ ЗАПИТАННЯ (FAQ) -->
+  <section id="faq" class="py-24 bg-white border-b border-sp-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="badge-sp mb-3">
+          Відповіді на поширені запитання
+        </div>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-sp-charcoal leading-tight">
+          Часті запитання <span class="italic text-sp-copper">(FAQ)</span>
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <div class="sp-card overflow-hidden">
+          <button class="faq-question w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-sp-cream/40 transition-colors">
+            <span class="font-serif text-lg sm:text-xl font-bold text-sp-charcoal">Чи потрібна спеціальна підготовка або відкритий «дар»?</span>
+            <span class="faq-icon text-sp-muted text-2xl font-light transition-transform">&plus;</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-sm sm:text-base text-sp-body leading-relaxed border-t border-sp-border bg-sp-cream/30 pt-4">
+            Ні, духовний потенціал і Тіло Світла закладені в кожній людині від народження; завдання курсу - поетапно створити умови для їх усвідомленого пробудження.
+          </div>
+        </div>
+
+        <div class="sp-card overflow-hidden">
+          <button class="faq-question w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-sp-cream/40 transition-colors">
+            <span class="font-serif text-lg sm:text-xl font-bold text-sp-charcoal">Чим це відрізняється від класичних медитацій?</span>
+            <span class="faq-icon text-sp-muted text-2xl font-light transition-transform">&plus;</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-sm sm:text-base text-sp-body leading-relaxed border-t border-sp-border bg-sp-cream/30 pt-4">
+            Медитація зазвичай потребує повної ізоляції, після виходу з якої стан швидко губиться. Супраментальні практики вчать перебувати в живому тонкому просторі одночасно зі звичайними фізичними справами, роботою чи кермуванням автомобіля.
+          </div>
+        </div>
+
+        <div class="sp-card overflow-hidden">
+          <button class="faq-question w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-sp-cream/40 transition-colors">
+            <span class="font-serif text-lg sm:text-xl font-bold text-sp-charcoal">Чи це магія або регресивний гіпноз?</span>
+            <span class="faq-icon text-sp-muted text-2xl font-light transition-transform">&plus;</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-sm sm:text-base text-sp-body leading-relaxed border-t border-sp-border bg-sp-cream/30 pt-4">
+            Ні. Робота з минулими подіями та родовими шарами відбувається в чистому усвідомленні через серцевий центр і звернення до душі, без трансових виходів чи нав'язування чужої волі.
+          </div>
+        </div>
+
+        <div class="sp-card overflow-hidden">
+          <button class="faq-question w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-sp-cream/40 transition-colors">
+            <span class="font-serif text-lg sm:text-xl font-bold text-sp-charcoal">Як побудовані практичні блоки?</span>
+            <span class="faq-icon text-sp-muted text-2xl font-light transition-transform">&plus;</span>
+          </button>
+          <div class="faq-answer hidden px-6 pb-6 text-sm sm:text-base text-sp-body leading-relaxed border-t border-sp-border bg-sp-cream/30 pt-4">
+            Усі техніки спочатку глибоко проживаються особисто на собі, оскільки неможливо передати іншим стан, якого ви не відчуваєте у власному тілі.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. ЗАВЕРШАЛЬНІ ТРИГЕРИ ДОВІРИ, СОЦІАЛЬНІ ДОКАЗИ ТА РЕЄСТРАЦІЯ -->
+  <section id="trust" class="py-24 bg-sp-cream border-b border-sp-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="badge-sp mb-3">
+          Досвід та гарантія якості
+        </div>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-sp-charcoal leading-tight">
+          Чому нам <span class="italic text-sp-copper">довіряють</span>
+        </h2>
+      </div>
+
+      <!-- 3 Trust Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        
+        <div class="sp-card p-8 sp-card-hover bg-white">
+          <div class="font-serif text-4xl font-bold text-sp-gold mb-3">17+ / 20</div>
+          <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-2">Досвід та авторитет</h3>
+          <p class="text-sm text-sp-body leading-relaxed">
+            Понад 17 років практичної роботи Центру та 20 років викладацького шляху авторки.
+          </p>
+        </div>
+
+        <div class="sp-card p-8 sp-card-hover bg-white">
+          <div class="w-11 h-11 rounded-xl bg-white border border-sp-border flex items-center justify-center text-sp-gold mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-2">Живе наставництво</h3>
+          <p class="text-sm text-sp-body leading-relaxed">
+            Супровід під час практики, розбір особистих процесів у групі та коригування рухів енергії.
+          </p>
+        </div>
+
+        <div class="sp-card p-8 sp-card-hover bg-white">
+          <div class="w-11 h-11 rounded-xl bg-white border border-sp-border flex items-center justify-center text-sp-gold mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl font-bold text-sp-charcoal mb-2">Безпечне середовище</h3>
+          <p class="text-sm text-sp-body leading-relaxed">
+            Навчання через принцип безумовної поваги до душі, відмови від гордині та збереження духовної чистоти.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Join / Registration Card -->
+      <div id="join" class="sp-card p-8 sm:p-12 max-w-4xl mx-auto scroll-mt-28 text-center bg-white border-sp-border shadow-md">
+        <div class="badge-sp mb-4">
+          Реєстрація та формат участі
+        </div>
+        <h3 class="font-serif text-3xl sm:text-4xl font-bold text-sp-charcoal leading-tight">
+          Долучитися до курсу <span class="italic text-sp-copper">та пробудити світло душі</span>
+        </h3>
+        <p class="text-sp-body text-sm sm:text-base mt-4 max-w-2xl mx-auto leading-relaxed font-light">
+          Очні практичні заняття та онлайн-формат із практиками синхронного проживання. Оберіть зручний канал зв'язку, щоб дізнатися деталі та забронювати участь:
+        </p>
+
+        <!-- Format Switcher Pill -->
+        <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-3 mt-7 max-w-2xl mx-auto">
+          <button type="button" onclick="setCourseFormat('очний')" id="btnFmtInPerson" class="px-5 py-2.5 rounded-full text-xs font-sans font-bold uppercase tracking-wider bg-[#1F1916] text-white border border-[#1F1916] transition-all">
+            Очні практичні заняття
+          </button>
+          <button type="button" onclick="setCourseFormat('онлайн')" id="btnFmtOnline" class="px-5 py-2.5 rounded-full text-xs font-sans font-bold uppercase tracking-wider bg-white text-sp-charcoal border border-sp-border hover:border-sp-gold transition-all">
+            Онлайн-формат
+          </button>
+          <button type="button" onclick="setCourseFormat('відеозаписи')" id="btnFmtVideo" class="px-5 py-2.5 rounded-full text-xs font-sans font-bold uppercase tracking-wider bg-white text-sp-charcoal border border-sp-border hover:border-sp-gold transition-all">
+            Відеозаписи
+          </button>
+        </div>
+        <div id="formatHint" class="text-xs text-sp-copper font-medium mt-3">
+          Обраний формат: Очні практичні заняття
+        </div>
+
+        <!-- 3 Contact Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10">
+          
+          <a href="tel:+380672122019" class="sp-card p-6 sm:p-7 text-center group flex flex-col items-center justify-between sp-card-hover bg-white">
+            <div class="w-14 h-14 rounded-full bg-sp-cream border border-sp-border flex items-center justify-center text-sp-gold mb-5 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <div class="text-[11px] font-sans font-bold text-sp-muted uppercase tracking-widest mb-1.5">Зателефонувати</div>
+            <div class="font-serif text-lg font-bold text-sp-charcoal group-hover:text-sp-copper transition-colors">+38 (067) 212-20-19</div>
+            <div class="text-xs text-sp-muted mt-2 font-sans">Прямий дзвінок</div>
+          </a>
+
+          <a href="https://t.me/+380672122019" target="_blank" rel="noopener noreferrer" class="sp-card p-6 sm:p-7 text-center group flex flex-col items-center justify-between sp-card-hover bg-white">
+            <div class="w-14 h-14 rounded-full bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 mb-5 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            </div>
+            <div class="text-[11px] font-sans font-bold text-sp-muted uppercase tracking-widest mb-1.5">Месенджер</div>
+            <div class="font-serif text-lg font-bold text-sp-charcoal group-hover:text-sky-600 transition-colors">Telegram</div>
+          </a>
+
+          <a href="viber://chat?number=%2B380672122019" target="_blank" rel="noopener noreferrer" class="sp-card p-6 sm:p-7 text-center group flex flex-col items-center justify-between sp-card-hover bg-white">
+            <div class="w-14 h-14 rounded-full bg-purple-50 border border-purple-100 flex items-center justify-center text-purple-700 mb-5 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.78 3.52C17.58 1.74 14.85 1 12 1 5.92 1 1 5.92 1 12c0 2.22.66 4.3 1.83 6.07L1 23l5.12-1.8c1.71 1.05 3.7 1.62 5.88 1.62 6.08 0 11-4.92 11-11 0-2.85-.74-5.58-2.22-7.78zM12 21.08c-1.88 0-3.62-.51-5.12-1.41l-.37-.22-3.8 1.34 1.35-3.69-.24-.39C2.84 15.17 2.31 13.63 2.31 12 2.31 6.66 6.66 2.31 12 2.31c2.59 0 5.02 1.01 6.85 2.85C20.69 6.99 21.7 9.42 21.7 12c-.01 5.34-4.36 9.69-9.7 9.69zm5.32-7.23c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.65.15-.19.29-.75.95-.92 1.14-.17.19-.35.22-.64.07-.29-.15-1.24-.46-2.36-1.46-.87-.78-1.46-1.74-1.63-2.03-.17-.29-.02-.45.13-.59.13-.13.29-.35.44-.52.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.08-.15-.65-1.57-.9-2.15-.24-.56-.48-.48-.65-.49-.17-.01-.36-.01-.56-.01-.19 0-.51.07-.78.36-.27.29-1.02 1-1.02 2.43 0 1.44 1.05 2.82 1.2 3.01.15.19 2.06 3.15 5 4.41.7.3 1.25.48 1.68.62.71.23 1.35.19 1.86.12.57-.08 1.72-.7 1.96-1.38.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34z"/></svg>
+            </div>
+            <div class="text-[11px] font-sans font-bold text-sp-muted uppercase tracking-widest mb-1.5">Месенджер</div>
+            <div class="font-serif text-lg font-bold text-sp-charcoal group-hover:text-purple-700 transition-colors">Viber</div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#140E0B] text-white py-14 border-t border-[#E5E0DA]/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+        <div>
+          <div class="font-serif font-bold text-base text-white tracking-wider">ЦЕНТР СУПРАМЕНТАЛЬНОЇ ПСИХОЛОГІЇ</div>
+          <div class="text-xs text-[#D9D1C7] mt-1 font-sans">© 2026 Усі права захищено. Курс супраментальної психології: Душа людини та дотик до багатовимірності.</div>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-[#D9D1C7] font-sans">
+          <a href="#hero" class="hover:text-sp-gold transition-colors">Вгору ↑</a>
+          <a href="#program" class="hover:text-sp-gold transition-colors">Програма</a>
+          <a href="#join" class="hover:text-sp-gold transition-colors">Долучитися</a>
+          <button type="button" id="openOfferBtn" class="hover:text-sp-gold transition-colors underline underline-offset-4 decoration-[#C8963E]/50">
+            Договір оферти
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ДОГОВІР ОФЕРТИ MODAL -->
+  <div id="offerModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-[#140E0B]/80 backdrop-blur-sm p-4">
+    <div class="sp-card bg-white max-w-2xl w-full max-h-[85vh] flex flex-col overflow-hidden shadow-2xl border border-sp-gold/40">
+      <div class="px-6 py-5 border-b border-sp-border bg-sp-cream flex items-center justify-between gap-4">
+        <div>
+          <div class="text-[10px] font-sans font-bold uppercase tracking-widest text-sp-copper">Правова інформація</div>
+          <h3 class="font-serif text-2xl font-bold text-sp-charcoal">Договір публічної оферти</h3>
+        </div>
+        <button type="button" id="closeOfferBtn" aria-label="Закрити" class="w-9 h-9 rounded-full bg-white border border-sp-border flex items-center justify-center text-sp-charcoal hover:border-sp-gold transition-colors text-lg">
+          ✕
+        </button>
+      </div>
+      <div class="p-6 overflow-y-auto space-y-4 text-xs sm:text-sm text-sp-body leading-relaxed">
+        <p><strong>1. Загальні положення.</strong> Цей документ є офіційною публічною пропозицією (офертою) Центру супраментальної психології (далі - Виконавець) укласти договір на надання інформаційно-консультаційних та навчальних послуг за курсом «Душа людини та дотик до багатовимірності» з будь-якою фізичною особою (далі - Замовник).</p>
+        <p><strong>2. Предмет договору.</strong> Виконавець зобов'язується надати Замовнику доступ до навчальних занять (очно, онлайн або у форматі відеозаписів) та методичних матеріалів курсу відповідно до обраного формату участі, а Замовник зобов'язується прийняти та оплатити ці послуги.</p>
+        <p><strong>3. Момент укладення договору (Акцепт).</strong> Повним і безумовним акцептом цієї оферти є реєстрація Замовника на курс та здійснення оплати за навчання.</p>
+        <p><strong>4. Права та обов'язки сторін.</strong> Виконавець забезпечує проведення занять, супровід у межах програми та надання доступу до записів. Замовник зобов'язується використовувати навчальні матеріали виключно для особистого розвитку та не поширювати відеозаписи третім особам.</p>
+        <p><strong>5. Контактні дані.</strong> Усі організаційні питання вирішуються за телефоном +38 (067) 212-20-19 або через офіційні месенджери Центру (Telegram, Viber).</p>
+      </div>
+      <div class="px-6 py-4 border-t border-sp-border bg-sp-cream/50 text-right">
+        <button type="button" id="closeOfferFooterBtn" class="px-6 py-2.5 rounded-full font-sans text-xs font-bold uppercase tracking-wider bg-[#1F1916] text-white hover:bg-sp-gold hover:text-slate-950 transition-colors">
+          Закрити
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const menuIconOpen = document.getElementById('menuIconOpen');
+    const menuIconClose = document.getElementById('menuIconClose');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isHidden = mobileNav.classList.contains('hidden');
+      mobileNav.classList.toggle('hidden', !isHidden);
+      menuIconOpen.classList.toggle('hidden', isHidden);
+      menuIconClose.classList.toggle('hidden', !isHidden);
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.add('hidden');
+        menuIconOpen.classList.remove('hidden');
+        menuIconClose.classList.add('hidden');
+      });
+    });
+
+    // Module Accordions
+    document.querySelectorAll('.module-header').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-target');
+        const content = document.getElementById(targetId);
+        const icon = btn.querySelector('.accordion-icon');
+        const isClosed = content.classList.contains('hidden');
+
+        document.querySelectorAll('.module-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.module-header .accordion-icon').forEach(i => {
+          i.innerHTML = '&plus;';
+        });
+
+        if (isClosed) {
+          content.classList.remove('hidden');
+          icon.innerHTML = '&minus;';
+        }
+      });
+    });
+
+    // FAQ Accordions
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const parent = btn.closest('.sp-card');
+        const answer = parent.querySelector('.faq-answer');
+        const icon = btn.querySelector('.faq-icon');
+        const isClosed = answer.classList.contains('hidden');
+
+        document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
+        document.querySelectorAll('.faq-icon').forEach(i => {
+          i.innerHTML = '&plus;';
+        });
+
+        if (isClosed) {
+          answer.classList.remove('hidden');
+          icon.innerHTML = '&minus;';
+        }
+      });
+    });
+
+    // Format Switcher
+    function setCourseFormat(mode) {
+      const btnInPerson = document.getElementById('btnFmtInPerson');
+      const btnOnline = document.getElementById('btnFmtOnline');
+      const btnVideo = document.getElementById('btnFmtVideo');
+      const hint = document.getElementById('formatHint');
+
+      const activeClass = 'px-5 py-2.5 rounded-full text-xs font-sans font-bold uppercase tracking-wider bg-[#1F1916] text-white border border-[#1F1916] transition-all';
+      const inactiveClass = 'px-5 py-2.5 rounded-full text-xs font-sans font-bold uppercase tracking-wider bg-white text-sp-charcoal border border-sp-border hover:border-sp-gold transition-all';
+
+      btnInPerson.className = inactiveClass;
+      btnOnline.className = inactiveClass;
+      btnVideo.className = inactiveClass;
+
+      if (mode === 'очний') {
+        btnInPerson.className = activeClass;
+        hint.textContent = 'Обраний формат: Очні практичні заняття';
+      } else if (mode === 'онлайн') {
+        btnOnline.className = activeClass;
+        hint.textContent = 'Обраний формат: Онлайн-формат із практиками синхронного проживання';
+      } else {
+        btnVideo.className = activeClass;
+        hint.textContent = 'Обраний формат: Відеозаписи занять і практик';
+      }
+    }
+
+    // Offer Modal
+    const offerModal = document.getElementById('offerModal');
+    const openOfferBtn = document.getElementById('openOfferBtn');
+    const closeOfferBtn = document.getElementById('closeOfferBtn');
+    const closeOfferFooterBtn = document.getElementById('closeOfferFooterBtn');
+
+    function closeOfferModal() {
+      offerModal.classList.add('hidden');
+      offerModal.classList.remove('flex');
+    }
+
+    if (openOfferBtn) {
+      openOfferBtn.addEventListener('click', () => {
+        offerModal.classList.remove('hidden');
+        offerModal.classList.add('flex');
+      });
+    }
+    if (closeOfferBtn) closeOfferBtn.addEventListener('click', closeOfferModal);
+    if (closeOfferFooterBtn) closeOfferFooterBtn.addEventListener('click', closeOfferModal);
+    if (offerModal) {
+      offerModal.addEventListener('click', (e) => {
+        if (e.target === offerModal) closeOfferModal();
+      });
+    }
+  </script>
+</body>
+</html>
